@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>TEATRO EPICODUS</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+      <h1>TEATRO EPICODUS</h1>
+      <p>Watch a movie and unwind</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="movie-form">
+            <div class="form-group">
+              <label for="new-name">Name:</label>
+              <input type="text" class="form-control" id="new-name">
+            </div>
+            <div class="form-group">
+              <label for="new-age">Age:</label>
+              <input type="text" class="form-control" id="new-age">
+            </div>
+
+            <h4>Please select movie:</h4>
+            <select id="movieSelect" class="form-control">
+              <option>The Hobbit</option>
+              <option>The Mummy</option>
+              <option>Wonder Woman</option>
+            </select>
+            <h4>Please enter number of tickets for each audience category:</h4>
+            <div class="form-group">
+              <label for="new-adult-ticket">Number of Adults:</label>
+              <input type="text" class="form-control" id="new-name">
+            </div>
+            <div class="form-group">
+              <label for="new-child-ticket">Number of Children:</label>
+              <input type="text" class="form-control" id="new-name">
+            </div>
+            <div class="form-group">
+              <label for="new-senior-ticket">Number of Seniors:</label>
+              <input type="text" class="form-control" id="new-name">
+            </div>
+            <h4>Please select showing day and time</h4>
+            <div class="form-group">
+              <label for="showDate">Select date:</label>
+              <input id="showDate" class="form-control" type="date">
+            </div>
+            <h5>Select Time:</h5>
+            <div class="radio">
+              <label>
+              <input type="radio" name="showTiming" value="Morning">Morning show - 10 AM
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="showTiming" value="Matinee">Matinee show - 11 AM
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="showTiming" value="Evening">Evening show - 6 PM
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Book Tickets</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
