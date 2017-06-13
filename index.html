@@ -19,31 +19,32 @@
           <form id="movie-form">
             <div class="form-group">
               <label for="new-name">Name:</label>
-              <input type="text" class="form-control" id="new-name">
+                <input type="text" class="form-control" id="new-name">
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label for="new-age">Age:</label>
               <input type="text" class="form-control" id="new-age">
-            </div>
+            </div> -->
 
             <h4>Please select movie:</h4>
             <select id="movieSelect" class="form-control">
-              <option>The Hobbit</option>
-              <option>The Mummy</option>
-              <option>Wonder Woman</option>
+              <option></option>
+              <option value="1">The Hobbit</option>
+              <option value="2">The Mummy</option>
+              <option value="3">Wonder Woman</option>
             </select>
             <h4>Please enter number of tickets for each audience category:</h4>
             <div class="form-group">
               <label for="new-adult-ticket">Number of Adults:</label>
-              <input type="text" class="form-control" id="new-name">
+              <input type="text" class="form-control" id="new-adult-ticket">
             </div>
             <div class="form-group">
               <label for="new-child-ticket">Number of Children:</label>
-              <input type="text" class="form-control" id="new-name">
+              <input type="text" class="form-control" id="new-child-ticket">
             </div>
             <div class="form-group">
               <label for="new-senior-ticket">Number of Seniors:</label>
-              <input type="text" class="form-control" id="new-name">
+              <input type="text" class="form-control" id="new-senior-ticket">
             </div>
             <h4>Please select showing day and time</h4>
             <div class="form-group">
@@ -68,6 +69,16 @@
             </div>
             <button type="submit" class="btn btn-primary">Book Tickets</button>
           </form>
+
+        </div>
+        <div class="col-md-6">
+          <div id="confirmPage">
+            <h2>Ticket Confirmation</h2>
+            <p>Thank you for your purchase.</p>
+            <p>You reserved:</p>
+            <ul id="results">
+            </ul>
+          </div>
         </div>
       </div>
     </div>
